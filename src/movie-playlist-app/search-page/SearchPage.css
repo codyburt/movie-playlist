@@ -1,0 +1,80 @@
+.movie-search-result {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+}
+@media (min-width: 600px) {
+  .movie-search-result {
+    flex-direction: row;
+  }
+}
+
+.movie-info {
+  min-height: 100px;
+  display: flex;
+  margin: 4px 0;
+  padding-right: 12px;
+  width: 100%;
+}
+
+.movie-info .release-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.release-info .title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.add-to-playlist-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.1s ease-in;
+  background-color: #ebf8ed;
+  border: #171817 1px solid;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.add-to-playlist-button.remove {
+  background-color: #d08779;
+  color: white;
+}
+
+.add-to-playlist-button:hover,
+.add-to-playlist-button:focus {
+  background-color: #82ab62;
+}
+
+.add-to-playlist-button:active {
+  background-color: #65854c;
+}
+
+.add-to-playlist-button.remove:hover,
+.add-to-playlist-button.remove:focus {
+  background-color: #bb5542;
+  color: white;
+}
+
+.add-to-playlist-button.remove:active {
+  background-color: #bb5542;
+  color: white;
+}
+
+.page-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.page-buttons .button {
+  margin: 0 8px;
+}
